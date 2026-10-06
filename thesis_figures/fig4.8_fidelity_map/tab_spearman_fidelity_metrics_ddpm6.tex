@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Spearman rank correlation between emulator fidelity and each conditioning parameter ($n=50$ test points). $q$ is the Benjamini--Hochberg false-discovery rate within each metric; the 95\% CI is a percentile bootstrap over the paired samples. At this sample size the smallest detectable correlation is $|\rho|\simeq0.28$.}
+    \label{tab:spearman_fidelity}
+    \begin{tabular}{llrrrc}
+        \toprule
+        Metric & Parameter & $\rho$ & $p$ & $q$ & 95\% CI \\
+        \midrule
+        $R^2$ on raw $\mu(P)$ & $\Omega_m$ & +0.151 & 0.295 & 0.443 & $[-0.16, +0.43]$ \\
+         & $\sigma_8$ & -0.201 & 0.161 & 0.443 & $[-0.48, +0.11]$ \\
+         & $A_{\rm SN1}$ & +0.343 & 0.015 & 0.088 & $[+0.07, +0.57]$ \\
+         & $A_{\rm AGN1}$ & -0.090 & 0.534 & 0.636 & $[-0.37, +0.21]$ \\
+         & $A_{\rm SN2}$ & +0.069 & 0.636 & 0.636 & $[-0.19, +0.32]$ \\
+         & $A_{\rm AGN2}$ & -0.169 & 0.241 & 0.443 & $[-0.44, +0.13]$ \\
+        \midrule
+        $R^2$ on raw $\sigma(P)$ & $\Omega_m$ & +0.396 & 0.004 & 0.013 & $[+0.15, +0.59]$ \\
+         & $\sigma_8$ & -0.181 & 0.207 & 0.250 & $[-0.45, +0.11]$ \\
+         & $A_{\rm SN1}$ & +0.191 & 0.184 & 0.250 & $[-0.10, +0.46]$ \\
+         & $A_{\rm AGN1}$ & +0.496 & 0.000 & 0.001 & $[+0.25, +0.69]$ \\
+         & $A_{\rm SN2}$ & +0.181 & 0.208 & 0.250 & $[-0.12, +0.46]$ \\
+         & $A_{\rm AGN2}$ & -0.117 & 0.419 & 0.419 & $[-0.40, +0.19]$ \\
+        \midrule
+        mean $|\Delta|$ dex, $\mu(P)$ & $\Omega_m$ & -0.286 & 0.044 & 0.195 & $[-0.54, +0.01]$ \\
+         & $\sigma_8$ & +0.189 & 0.189 & 0.378 & $[-0.10, +0.45]$ \\
+         & $A_{\rm SN1}$ & +0.085 & 0.557 & 0.647 & $[-0.21, +0.36]$ \\
+         & $A_{\rm AGN1}$ & -0.263 & 0.065 & 0.195 & $[-0.47, -0.01]$ \\
+         & $A_{\rm SN2}$ & +0.066 & 0.647 & 0.647 & $[-0.23, +0.35]$ \\
+         & $A_{\rm AGN2}$ & +0.134 & 0.354 & 0.531 & $[-0.19, +0.43]$ \\
+        \midrule
+        mean $|\Delta|$ dex, $\sigma(P)$ & $\Omega_m$ & -0.128 & 0.375 & 0.606 & $[-0.39, +0.17]$ \\
+         & $\sigma_8$ & -0.050 & 0.733 & 0.733 & $[-0.33, +0.25]$ \\
+         & $A_{\rm SN1}$ & -0.096 & 0.505 & 0.606 & $[-0.37, +0.19]$ \\
+         & $A_{\rm AGN1}$ & -0.102 & 0.479 & 0.606 & $[-0.39, +0.20]$ \\
+         & $A_{\rm SN2}$ & -0.147 & 0.307 & 0.606 & $[-0.40, +0.13]$ \\
+         & $A_{\rm AGN2}$ & -0.098 & 0.499 & 0.606 & $[-0.35, +0.17]$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}

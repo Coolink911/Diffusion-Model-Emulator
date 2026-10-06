@@ -1,0 +1,8 @@
+# Versions of the environment the scripts were tested with (Python 3.12).
+# Any torch >= 2.2 with CUDA should work; install the CUDA build that matches your driver
+# (see https://pytorch.org/get-started/locally/).
+torch==2.7.0
+numpy==1.26.4
+matplotlib==3.10.0
+tqdm==4.65.0
+scipy==1.12.0

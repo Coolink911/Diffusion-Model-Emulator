@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Log-space $R^2$ and median fractional residual between generated and CAMELS
+    power spectra, averaged over the six parameter labels (min/max across those labels).
+    $R^2_{\log}$ is computed on $\log_{10} P(k)$ so all resolved modes contribute
+    comparably; the fractional residual $|P_{\rm gen}/P_{\rm CAMELS} - 1|$ is reported as
+    an independent quantity, not as $1 - R^2$. Both statistics run over all 127 resolved modes, $k = 0.251$--$31.92\,h\,\mathrm{Mpc}^{-1}$. The CAMELS reference uses the 15 maps CAMELS LH stores at each parameter set (a hard ceiling); 300 maps are generated per anchor. The $\sigma(P)$ row therefore carries a sampling floor of $\approx19\%$ on the ratio $\sigma_{\rm gen}/\sigma_{\rm CAMELS}$, set by the CAMELS side. $\pm$ values are the bootstrap standard deviation of each six-label mean (1000 resamples of both the CAMELS and the generated maps at every label).}
+    \label{tab:r2_metrics}
+    \begin{tabular}{llcccc}
+        \toprule
+        Model & Quantity & Mean $R^2_{\log}$ & Min/Max $R^2_{\log}$ & Median $|\Delta|$ & Min/Max $|\Delta|$ \\
+        \midrule
+        DDPM-2  & $\mu(P)$     & 0.995 $\pm$ 0.002 & 0.991 / 0.999 & 0.099 $\pm$ 0.014 & 0.029 / 0.153 \\
+                & $\sigma(P)$  & 0.962 $\pm$ 0.015 & 0.932 / 0.975 & 0.327 $\pm$ 0.095 & 0.220 / 0.535 \\
+        \midrule
+        DDPM-6  & $\mu(P)$     & 0.989 $\pm$ 0.003 & 0.962 / 0.997 & 0.133 $\pm$ 0.032 & 0.085 / 0.264 \\
+                & $\sigma(P)$  & 0.904 $\pm$ 0.026 & 0.853 / 0.986 & 0.613 $\pm$ 0.157 & 0.133 / 0.986 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

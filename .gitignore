@@ -1,0 +1,13 @@
+# Inputs and outputs that are not part of the code
+data/
+weights/
+results/
+outputs/
+outputs_*/
+slurm-*.out
+slurm-*.err
+
+# Python
+__pycache__/
+*.pyc
+.venv/
